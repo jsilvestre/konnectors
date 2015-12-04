@@ -1,1 +1,1 @@
-coffeelint -f coffeelint.json  -r --color=always .
+node_modules/.bin/eslint --fix server.js server/*.js server/**/*.js

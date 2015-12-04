@@ -1,0 +1,19 @@
+---
+    extends: "airbnb/base"
+    parser: "babel-eslint"
+    env:
+        node: true
+        mocha: true
+        es6: true
+    ecmaFeatures:
+        modules: true
+    globals:
+        emit: true
+    rules:
+        max-len: [1, 80, 4]
+        indent: [2, 4, {"SwitchCase": 1}]
+        new-cap: [2, {
+            "newIsCap": true,
+            "capIsNewExceptions": ["Map", "Record", "List"]
+        }]
+        semi: [2, "never"]
